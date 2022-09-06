@@ -1,1 +1,1 @@
-# Amimated Countdoun
+# Animated Countdoun
