@@ -1,4 +1,4 @@
-const numbs = document.querySelectorAll('.nums span')
+const numbs = document.querySelectorAll('.numbs span')
 const counter = document.querySelector('.counter')
 const finalMessage = document.querySelector('.final')
 const replay = document.querySelector('#replay')
@@ -24,13 +24,14 @@ function runAnimation() {
             if (e.animationName === 'goIn' && idx !== nextToLast) { 
                 num.classList.remove('in')
                 num.classList.add('out')
-            } else if (e.animationName === 'goOut' && num.nextElementSibl:
+            } else if (e.animationName === 'goOut' && num.nextElementSibling )   {
                 num.nextElementSibling.classList.add('in')
             } else {
                 counter.classList.add('hide')
                 finalMessage.classList.add('show')
             }
         })
+    })
 }
 
 
